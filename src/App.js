@@ -13,8 +13,8 @@ import Forcast from "./Component/Foracast";
 function App() {
   return (
     <React.Fragment>
-      <Header />
       <Router>
+        <Header />
         <Route exact path="/" component={Weather}></Route>
         <Route exact path="/forcast" component={Forcast}></Route>
       </Router>
