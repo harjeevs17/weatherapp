@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Weather}></Route>
-          <Route path="/forcast" component={Forcast}></Route>
+          <Route exact path="/forcast" component={Forcast}></Route>
         </Switch>
       </Router>
     </React.Fragment>
