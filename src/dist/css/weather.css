@@ -1,0 +1,127 @@
+*, html{
+    margin:0px;
+    padding:0px
+}
+p {
+    margin:0px;
+    text-transform: capitalize;
+    font-size: 24px;
+    color: #201313;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder
+}
+td {
+    border:none !important;
+}
+input[type=text] {
+    border: 2px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #495057;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.city-name {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: #641717;
+}
+.error {
+    color:#a00000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card{
+    border:2px solid black
+}
+.card-header{
+    background-color: #94fa94;
+}
+.card-body{
+    background-color: #d6ffd6;
+}
+.card-foot p {
+    font-size: 18px;
+}
+.custom-border {
+    border-right: 1px solid #003973;
+}
+i{
+    color:black
+}
+.deg-symbol {
+    font-size: 18px;
+    position: absolute;
+}
+.custom-letter-space {
+    letter-spacing: -2px;
+}
+.hour-card-temp {
+  font-size: 3em;
+}
+.hour-deg-symbol {
+  font-size: 28px;
+  position: absolute;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:red;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
