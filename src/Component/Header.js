@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import { Link } from "react-router-dom";
 import "./../dist/css/header.css";
 import {
   Navbar,
@@ -30,14 +31,14 @@ const Header = () => {
               <Navbar expand="xs" className="px-0 ">
                 <Nav className="mr-auto" navbar>
                   <NavItem>
-                    <NavLink className="nav-item" href="/">
+                    <Link className="nav-item" to={{ pathname: "/" }}>
                       Home
-                    </NavLink>
+                    </Link>
                   </NavItem>
                   <NavItem>
-                    <NavLink className="nav-item" href="/forcast">
+                    <Link className="nav-item" to={{ pathname: "/forcast" }}>
                       Forcast
-                    </NavLink>
+                    </Link>
                   </NavItem>
                   <NavItem>
                     <NavLink
