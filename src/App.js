@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "weather-icons/css/weather-icons.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -15,10 +15,8 @@ function App() {
     <React.Fragment>
       <Header />
       <Router>
-        <Switch>
-          <Route exact path="/" component={Weather}></Route>
-          <Route exact path="/forcast" component={Forcast}></Route>
-        </Switch>
+        <Route exact path="/" component={Weather}></Route>
+        <Route exact path="/forcast" component={Forcast}></Route>
       </Router>
     </React.Fragment>
   );
