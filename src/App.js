@@ -15,8 +15,8 @@ function App() {
     <React.Fragment>
       <Router>
         <Header />
-        <Route exact path="/" component={Weather}></Route>
-        <Route exact path="/forcast" component={Forcast}></Route>
+        <Route exact path="/weatherapp" component={Weather}></Route>
+        <Route exact path="/weatherapp/forcast" component={Forcast}></Route>
       </Router>
     </React.Fragment>
   );
